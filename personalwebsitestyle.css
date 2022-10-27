@@ -1,0 +1,179 @@
+@font-face {
+  font-family: Qontra;
+  src: url(Qontra.otf);
+}
+
+@font-face {
+  font-family: HankenLight;
+  src: url(Hanken-Light.ttf);
+}
+
+:root {
+  --background: #015961;
+  --foreground: #e6eff0;
+}
+
+a {
+  color: #28bd98;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: var(--foreground); /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  font-size: 20px;
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: var(--background); /* White text color */
+  text-align: center; /* Center the text */
+  padding: 12px 24px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  /* --background-color: #ddd; Grey background color */
+  color: #5ed1db; /* light blue text color */
+}
+
+ body {
+  background-color: var(--background);
+  font-family: HankenLight;
+  font-weight: lighter;
+  padding: 0px 200px; /* Some padding */
+}
+
+
+ h1, h2, h3, h4 {
+   text-align: center;
+   color: white;
+   /*font-weight: lighter;*/
+}
+
+p{
+  font-size: 20px;
+  }
+  /* Ensure proper sizing */
+  * {
+    box-sizing: border-box;
+    #font-family: HankenLight;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    link
+  }
+
+
+  .infop{
+    font-size: 20px;
+    }
+    /* Ensure proper sizing */
+    {
+      box-sizing: border-box;
+      font-family: HankenLight;
+      font-weight: lighter;
+      link
+    }
+
+  /* Column container */
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 60%; /* Set the width of the sidebar */
+    background-color: var(--foreground); /* dark background color */
+    padding: 0px; /* Some padding */
+  }
+
+  /* Main column */
+  .main {
+    flex: 40%; /* Set the width of the main content */
+    background-color: var(--foreground); /* Dark background color */
+    color: var(--background); /* white text color*/
+    padding: 40px 24px; /* Some padding */
+  }
+
+  /*column of 3*/
+  .colthree {
+    flex: 33%; /* Set the width of the sidebar */
+    background-color: #000000; /* blue background color */
+    color: #9be0cf; /* White text color */
+    padding: 20px; /* Some padding */
+  }
+
+  .colthreebutton {
+    flex: 33%; /* Set the width of the sidebar */
+    color: black; /* White text color */
+    padding: 20px; /* Some padding */
+    }
+
+
+  .coltwo {
+    float: left;
+    flex: 50%; /* Set the width of the sidebar */
+    padding: 20px; /* Some padding */
+  }
+
+  .collapsible {
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    background-color: #e6eff0;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #015961;
+    color: #e6eff0;
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    font-size: 20px;
+  }
+
+  .footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  color: #e6eff0;
+  background: #000000; /* Black background */
+}
+
+button{
+  border: none;
+  background-color: var(--foreground);
+  color: var(--background);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+ .column {
+   width: 100%;
+ }
+}

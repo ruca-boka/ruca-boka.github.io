@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Rujul's Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="personalwebsitestyle.css">
+  <!--<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/hanken" type="text/css"/> -->
+</head>
+
+<!-- Dark color: #015961
+Lighter color: #5ed1db
+Lightest color: #e6eff0 -->
+<div class="navbar">
+  <a href="index.html">Homepage</a>
+  <a href="https://www.mit.edu/~rujul/">Coursework</a>
+  <a href="activities.html">Activities</a>
+  <a href="https://www.mit.edu/~rujul/" class="right">Contact</a>
+</div>
+
+<body>
+<h1>Rujul Gandhi</h1>
+
+<h3>selected classes I've taken, my thoughts about them, and the occasional final project</h3>
+
+<div class="row">
+  <div class="colthreebutton">
+
+    <button type="button" class="collapsible">24.901 Phonology</button>
+    <div class="content">
+     <p><div class="infop">This class was a good foundation in the theories of phonology, specifically Optimality Theory.</div></p>
+    </div>
+  </div>
+
+  <div class="colthreebutton">
+    <button type="button" class="collapsible">24.905 Laboratory in Psycholinguistics</button>
+    <div class="content">
+     <p><div class="infop">Final project: <a href="24905_paper.pdf">'Lexical Item Exchanges in the Noisy Channel Model: A
+replication and extension of Poppels and Levy, 2016'</a></div></p>
+    </div>
+  </div>
+
+  <div class="colthreebutton">
+    <button type="button" class="collapsible">24.909 Field Methods in Linguistics</button>
+    <div class="content">
+     <p><div class="infop">This was one of the most fun and engaging classes I've taken at MIT. Although the workload was low in the beginning, I struggled a bit at the end, possibly since I was taking it without the prerequisite of 24.902 (Syntax).</div></p>
+     <p><div class="infop">Final project: <a href="24909_paper.pdf">A grammatical sketch of Wolof</a></div></p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="colthreebutton">
+
+    <button type="button" class="collapsible">6.024/20.310 Molecular, Cellular, and Tissue Biomechanics</button>
+    <div class="content">
+     <p><div class="infop">[Comments will be added soon.]</div></p>
+    </div>
+  </div>
+
+  <div class="colthreebutton">
+    <button type="button" class="collapsible">6.045 Automata, Computability, and Complexity</button>
+    <div class="content">
+     <p><div class="infop">[Comments will be added soon.]</div></p>
+    </div>
+  </div>
+
+  <div class="colthreebutton">
+    <button type="button" class="collapsible">2.872 Design of Medical Devices and Implants</button>
+    <div class="content">
+     <p><div class="infop">[Comments will be added soon.]</div></p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="colthreebutton">
+
+    <button type="button" class="collapsible">6.003 Signals and Systems (ongoing)</button>
+    <div class="content">
+     <p><div class="infop">[Comments will be added soon.]</div></p>
+    </div>
+  </div>
+
+  <div class="colthreebutton">
+    <button type="button" class="collapsible">7.05 General Biochemistry</button>
+    <div class="content">
+     <p><div class="infop">[Comments will be added soon.]</div></p>
+    </div>
+  </div>
+
+  <div class="colthreebutton">
+    <button type="button" class="collapsible">24.903 Semantics and Pragmatics</button>
+    <div class="content">
+     <p><div class="infop">[Comments will be added soon.]</div></p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
