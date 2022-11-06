@@ -9,17 +9,22 @@
 }
 
 :root {
-  --background: #015961;
-  --foreground: #e6eff0;
+  /*--background: #015961;*/
+  --background: #009999;
+  --foreground:#e6eff0;
+  --text: #015961;
+
+  /*--foreground: #e6eff0;*/
 }
 
 a {
-  color: #28bd98;
+  color: #009999;
 }
 
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
+  border-radius: 10px;
   background-color: var(--foreground); /* Dark background color */
 }
 
@@ -28,7 +33,7 @@ a {
   float: left; /* Make sure that the links stay side-by-side */
   font-size: 20px;
   display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: var(--background); /* White text color */
+  color: var(--text); /* White text color */
   text-align: center; /* Center the text */
   padding: 12px 24px; /* Add some padding */
   text-decoration: none; /* Remove underline */
@@ -53,22 +58,47 @@ a {
 }
 
 
- h1, h2, h3, h4 {
+ h1, h2 {
    text-align: center;
    color: white;
    /*font-weight: lighter;*/
 }
 
+h3{
+  text-align: center;
+}
+
 p{
-  font-size: 20px;
   }
   /* Ensure proper sizing */
-  * {
+*{
     box-sizing: border-box;
     #font-family: HankenLight;
     font-family: 'Open Sans', sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     link
+  }
+
+ul{
+  font-size: 20px;
+  /*padding: 3px;*/
+  line-height: 1.15em;
+}
+
+ul li{
+  font-size: 20px;
+  margin: 10px 0;
+  line-height: 1.15em;
+  /*padding: 3px;*/
+}
+
+figcaption{
+  float: center;
+  font-size:16px;
+}
+
+  .textbox{
+    font-size: 20px;
   }
 
 
@@ -86,24 +116,26 @@ p{
   /* Column container */
 
   .row {
+    border-radius: 10px;
     display: flex;
+    background-color: var(--foreground);
+    color: var(--text);
     flex-wrap: wrap;
   }
 
   /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
   .side {
-    flex: 60%; /* Set the width of the sidebar */
-    background-color: var(--foreground); /* dark background color */
-    padding: 0px; /* Some padding */
+    flex: 40%; /* Set the width of the sidebar */
+     /* dark background color */
+    padding: 24px 20px 24px 20px; /* Some padding */
   }
 
   /* Main column */
   .main {
-    flex: 40%; /* Set the width of the main content */
-    background-color: var(--foreground); /* Dark background color */
-    color: var(--background); /* white text color*/
-    padding: 40px 24px; /* Some padding */
+    flex: 50%; /* Set the width of the main content */
+    padding: 24px 40px;  /* Some padding */
+    position: relative;
   }
 
   /*column of 3*/
@@ -125,6 +157,27 @@ p{
     float: left;
     flex: 50%; /* Set the width of the sidebar */
     padding: 20px; /* Some padding */
+  }
+
+  .centercol{
+    background-color: var(--foreground); /* Dark background color */
+    color: var(--background); /* white text color*/
+    flex:50%;
+    padding:20px;
+  }
+
+  .smallcol{
+    background-color: var(--foreground); /* Dark background color */
+    color: var(--background); /* white text color*/
+    flex:25%;
+    padding:10px;
+  }
+
+  .rightcol{
+    background-color: var(--foreground); /* Dark background color */
+    color: var(--background); /* white text color*/
+    flex:25%;
+    padding:10px;
   }
 
   .collapsible {
@@ -162,6 +215,7 @@ button{
   border: none;
   background-color: var(--foreground);
   color: var(--background);
+  border-radius: 10px;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
