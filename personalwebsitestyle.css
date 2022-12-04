@@ -6,19 +6,24 @@
 @font-face {
   font-family: HankenLight;
   src: url(Hanken-Light.ttf);
-}*/
+}
+green #006666
+*/
 
 :root {
-  /*--background: #015961;*/
-  --background: #009999;
-  --foreground:#e6eff0;
-  --text: #015961;
+  /*--background: #015961;
+  --background: #147b7f;*/
+  --background:#006666;
+  --foreground:#dcefef;
+  /*--text: #14467f;*/
+  --text: var(--background);
+  --link-color: #ff59bf;
 
   /*--foreground: #e6eff0;*/
 }
 
 a {
-  color: #009999;
+  color: var(--link-color);
 }
 
 /* Style the top navigation bar */
@@ -33,7 +38,7 @@ a {
   float: left; /* Make sure that the links stay side-by-side */
   font-size: 20px;
   display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: var(--text); /* White text color */
+  color: var(--background); /* White text color */
   text-align: center; /* Center the text */
   padding: 12px 24px; /* Add some padding */
   text-decoration: none; /* Remove underline */
@@ -47,7 +52,7 @@ a {
 /* Change color on hover/mouse-over */
 .navbar a:hover {
   /* --background-color: #ddd; Grey background color */
-  color: #5ed1db; /* light blue text color */
+  color: var(--link-color); /* light blue text color */
 }
 
  body {
@@ -161,21 +166,21 @@ figcaption{
 
   .centercol{
     background-color: var(--foreground); /* Dark background color */
-    color: var(--background); /* white text color*/
+    color: var(--text); /* white text color*/
     flex:50%;
     padding:20px;
   }
 
   .smallcol{
     background-color: var(--foreground); /* Dark background color */
-    color: var(--background); /* white text color*/
+    color: var(--text); /* white text color*/
     flex:25%;
     padding:10px;
   }
 
   .rightcol{
     background-color: var(--foreground); /* Dark background color */
-    color: var(--background); /* white text color*/
+    color: var(--text); /* white text color*/
     flex:25%;
     padding:10px;
   }
@@ -194,7 +199,7 @@ figcaption{
 
   .active, .collapsible:hover {
     background-color: #015961;
-    color: #e6eff0;
+    color: var(--link-color);
   }
 
   .content {
@@ -224,6 +229,9 @@ button{
   margin: 4px 2px;
   cursor: pointer;
   }
+.button a:hover:{
+  color: var(--link-color);
+}
 
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
