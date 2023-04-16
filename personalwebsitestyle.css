@@ -139,7 +139,7 @@ figcaption{
   /* Main column */
   .main {
     flex: 50%; /* Set the width of the main content */
-    padding: 24px 40px;  /* Some padding */
+    padding: 1% 5%;  /* Some padding */
     position: relative;
   }
 
