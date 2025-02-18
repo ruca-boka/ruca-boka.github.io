@@ -1,0 +1,122 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Full height and width for body */
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  
+  /* Left side (image) */
+  .left-side-cover {
+    flex: 1;
+    /*background: url('imgs/wave_crop.png') no-repeat center/cover;
+    position: relative;*/
+    background-color: #fff; /* White background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-side{
+    flex: 1;
+    background-color: #fff; /* White background */
+    color:#015961;
+    padding: 40px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;   /* Ensure content is stacked vertically */
+    justify-content: center;  /* Vertically center the content */
+    height: 100vh;
+  }
+  
+  .profile-img {
+    width: 50%; /* Adjust the image size */
+    max-width: 500px;
+    object-fit: cover;
+    border: 5px solid #015961;
+
+  }
+  
+  /* Right side (information) */
+  .right-side {
+    flex: 1;
+    background-color: #015961; /* Green background */
+    color: white;
+    padding: 40px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;   /* Ensure content is stacked vertically */
+    justify-content: center;  /* Vertically center the content */
+    height: 100vh;
+  }
+  
+  .right-side h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .left-side h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .right-side h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+
+  .left-side h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .right-side a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .right-side a:hover {
+    color: #fae3b4;
+    text-decoration: underline;
+  }
+
+  .left-side a {
+    color: #015961;
+    text-decoration: underline;
+  }
+  
+  .left-side a:hover {
+    color: #57b3bb;
+    text-decoration: underline;
+  }
+
+
+  /* Index Page Text */
+  .index-page-text {
+    display: flex;
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    height: 100vh;             /* Take full viewport height */
+    color: #fff;
+  }
+  .left-side ul{
+    list-style-type:none;
+  }
+  .right-side ul{
+    list-style-type:none;
+  }
+  
