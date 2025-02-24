@@ -41,24 +41,8 @@
     color:#015961;
   }
 
-  /* Left side (image) */
-  .left-side-cover {
-    flex: 1;
-    /*background: url('imgs/wave_crop.png') no-repeat center/cover;
-    position: relative;*/
-    background-color: #fff; /* White background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  /* Split Screen */
 
-  .profile-img {
-    width: 50%; /* Adjust the image size */
-    max-width: 500px;
-    object-fit: cover;
-    border: 5px solid #015961;
-
-  }
 
   .left-side{
     flex: 1;
@@ -70,6 +54,15 @@
     flex-direction: column;   /* Ensure content is stacked vertically */
     justify-content: center;  /* Vertically center the content */
     height: 100vh;
+  }
+
+  .left-side img {
+    width: 50%; /* Adjust the image size */
+    max-width: 500px;
+    display: block;
+    /*object-fit: cover;*/
+    border: 5px solid #015961;
+    margin: auto;
   }
   
   /* Right side (information) */
