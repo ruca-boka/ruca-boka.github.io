@@ -96,8 +96,18 @@
     font-size: 1rem;
     line-height: 1.25;
   }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  a:hover{
+    color:#57b3bb;
+    text-decoration: underline;
+  }
   
-  .right-side a {
+  /*.right-side a {
     color: #fff;
     text-decoration: underline;
   }
@@ -115,7 +125,7 @@
   .left-side a:hover {
     color: #57b3bb;
     text-decoration: underline;
-  }
+  }*/
 
 
   /* Index Page Text */
